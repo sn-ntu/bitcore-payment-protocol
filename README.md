@@ -12,19 +12,19 @@ A module for [bitcore](https://github.com/bitpay/bitcore) that implements [Payme
 This library is distributed in both the npm and bower packaging systems.
 
 ```sh
-npm install bitcore-lib
-npm install bitcore-payment-protocol
+npm install zcore-lib
+npm install zcore-payment-protocol
 ```
 
 ```sh
-bower install bitcore-lib
-bower install bitcore-payment-protocol
+bower install zcore-lib
+bower install zcore-payment-protocol
 ```
 
 There are many examples of how to use it on the developer guide [section for payment protocol](https://bitcore.io/api/paypro). For example, the following code would verify a payment request:
 
 ```javascript
-var PaymentProtocol = require('bitcore-payment-protocol');
+var PaymentProtocol = require('zcore-payment-protocol');
 
 var body = PaymentProtocol.PaymentRequest.decode(rawbody);
 var request = new PaymentProtocol().makePaymentRequest(body);
